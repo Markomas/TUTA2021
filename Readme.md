@@ -18,6 +18,7 @@ What wiki says:
 **Version-control** - How we do version control: 
 
 ![enter image description here](https://i.ibb.co/4PMH3YV/Screenshot-2.png)
+
 How git version control looks like:
 
 ![enter image description here](https://user-images.githubusercontent.com/18033666/40845217-0a1ec660-6584-11e8-8e74-37a68fae953b.png)
@@ -67,6 +68,7 @@ First let's add demo.php file to that repository which contains:
     
     
 ![enter image description here](https://i.ibb.co/tDsmKyb/Screenshot-5.png)
+
 To commit something to local GIT repository we have to add that file to staging area with command:
 
     git add demo.php
@@ -79,6 +81,7 @@ Now we can commit all staging files to local repository:
 
     git commit -m "My first commit to git"
    ![enter image description here](https://i.ibb.co/xLqjkTZ/Screenshot-8.png)
+   
 
 ## Create GitHub repository
 Register to https://github.com/
@@ -86,6 +89,7 @@ Register to https://github.com/
 After logging in to your GitHub dashboard press "New"
 
 ![enter image description here](https://i.ibb.co/cQP992v/Screenshot-9.png)
+
 Enter repository name and create it:
 
 ![enter image description here](https://i.ibb.co/k6Sr66v/Screenshot-11.png)
@@ -120,9 +124,11 @@ While running "git push -u origin master" we should get GitHub login page:
 And after successful login and push we should get:
 
 ![enter image description here](https://i.ibb.co/kxrq1rM/Screenshot-16.png)
+
 Now let's reload our GitHub repository:
 
 ![enter image description here](https://i.ibb.co/cXgMcvv/Screenshot-17.png)
+
 Cool now we see that our local repository has been synced with GitHub repository. This means that our local changes has been saved to cloud.
 Because git is **Distributed version-control** this means that our files and history is saved in our local computer and GitHub servers. If our cat spills coffee on our laptop, no worries we can get these files from GitHub. And if GitHub cat spills coffee on GitHub servers no worries we have all files and history on our local computer and we can push this files again.
 
@@ -133,9 +139,11 @@ Now let's add new file to GitHub and pull/download these files to our local comp
 And then fill fields like this:
 
 ![enter image description here](https://i.ibb.co/wpQNy8y/Screenshot-18.png)
+
 And now we can see that file in GitHub repository:
 
 ![enter image description here](https://i.ibb.co/2PThv4b/Screenshot-21.png)
+
 But wait we don't see that file in our local computer, we have different versions of same project local computer. How we could solve this?
 Well it's easy we need just to download that remote repository to our local computer with these commands:
 
@@ -153,6 +161,7 @@ Well it's easy we need just to download that remote repository to our local comp
 Well what is branch?
 
 ![enter image description here](https://i.ibb.co/F7m43PC/Untitled.png)
+
 Branches are used to develop features isolated from each other. The _master_ branch is the "default" branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
 
 So all this time we were working on master branch, but usually we don't work on this branch directly.
@@ -162,10 +171,12 @@ Let's check current branch:
 
 
 ![enter image description here](https://i.ibb.co/fDMQZKV/Screenshot-23.png)
+
 so let's create local branch and checkout it:
 
     git checkout -b feature_x
 ![enter image description here](https://i.ibb.co/YjYGp9m/Screenshot-24.png)
+
 As we see we were on `master` then we created `feature_x`branch and checked out that branch.
 
 > Branch marked green with star is current branch
@@ -176,6 +187,7 @@ How to get back to `master` branch?
 
     git checkout master
 ![enter image description here](https://i.ibb.co/3fw1KQf/Screenshot-25.png)
+
 And how to delete branch?
 
     git branch -d feature_x
@@ -193,6 +205,7 @@ Now small task for you:
 After all steps we should see in our git hub repository that we have new branch named as `feature/adding-third-file`:
 
 ![enter image description here](https://i.ibb.co/Wv5Q0CV/Screenshot-28.png)
+
 And entering it we will see our new file is created in that branch: 
 
 ![enter image description here](https://i.ibb.co/X8CN73T/Screenshot-29.png)
@@ -217,6 +230,7 @@ So if we want to merge: `feature/adding-third-file` to `master` we have to:
 and if want to push these changes to GitHub, we can push `master`
 
 ![enter image description here](https://i.ibb.co/6XsmLmm/Screenshot-30.png)
+
 And to confirm that we can open our GitHub page and we will see in our `master` branch that we have `third.php`.
 
 ![enter image description here](https://i.ibb.co/W2y3jT2/Screenshot-31.png)
@@ -255,6 +269,7 @@ Let's try it out:
      git merge feature/adding-another-fourth-file
 
 ![enter image description here](https://i.ibb.co/Jsm3rRr/Screenshot-32.png)
+
 Oh with second merge we got message:
 
 	CONFLICT (add/add): Merge conflict in fourth.php
