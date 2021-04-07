@@ -1,4 +1,4 @@
-# TransUnion TUTA workshop
+# TransUnion workshop
 
 ## Contents
 
