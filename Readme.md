@@ -10,28 +10,6 @@
  6. Merge branches
  7. Merge conflicts
 
-## Intro to GIT
-
-What wiki says: 
-**Git** is a ****distributed** version-control** system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, **non-linear workflows**.
-
-**Version-control** - How we do version control: 
-
-![enter image description here](https://i.ibb.co/4PMH3YV/Screenshot-2.png)
-
-How git version control looks like:
-
-![enter image description here](https://user-images.githubusercontent.com/18033666/40845217-0a1ec660-6584-11e8-8e74-37a68fae953b.png)
-
-**Distributed version-control** - all files and history are saved in every programmers computer, also it can be saved in central file. Every body, has copy of all files and history and all clients can work offline and **merge** all changes at end of day/week.
-
-**Linear workflow** - when everybody is working on same version of project, same version of file etc.
-
-**Non-linear workflow** - when everybody has it's own version of file.
-
-
-![enter image description here](https://i.ibb.co/Ky9Mcxt/Untitled-Diagram.png)
-
 
 ## Create first local repository (individual work starts here)
 First let's create new project directory and open git bash in project directory
