@@ -227,7 +227,7 @@ Small task for you:
 
  3. Stage that file and commit it to your local repository
  4. Push branch `feature/adding-fourth-file` to GitHub.
- 5. Then checkout master branch
+ 5. Then checkout master or main branch
  6. Then create another branch `feature/adding-another-fourth-file` and switch to it
  7. Create new file in your local computer which is named as `fourth.php` with text :
 
